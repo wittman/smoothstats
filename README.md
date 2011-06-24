@@ -10,7 +10,7 @@ A PHP class with main method GetAdjustedAverage(), used to calculate an average 
 	$smoothstats = new SmoothStats($nums);
 	$average = $smoothstats->GetAverage();
 	
-	Average: **83.307692307692**  
+	Average: 83.307692307692
 	
 
 ### Usage Example - Average with elements past standard deviation removed from calculation
@@ -19,6 +19,6 @@ A PHP class with main method GetAdjustedAverage(), used to calculate an average 
 	$smoothstats = new SmoothStats($nums);
 	$average_sdf_3 = $smoothstats->GetAdjustedAverage($standardDeviationFactor=3, $roundingPrecision=2);
 	
-	Smoothed Average: **7**
+	Smoothed Average: 7
 
-### SEE **smoothstats.demo.php** in a browser for examples and unit test results.
+### SEE smoothstats.demo.php in a browser for examples and unit test results.
