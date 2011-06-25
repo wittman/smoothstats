@@ -6,19 +6,21 @@ A PHP class with main method GetAdjustedAverage(), used to calculate an average 
 
 ### Usage Example - Plain Average
 
+	```php
 	$nums = array(6,6,6,6,7,7,7,7,8,8,8,8,999);
 	$smoothstats = new SmoothStats($nums);
 	$average = $smoothstats->GetAverage();
-	
+	```
 	Average: 83.307692307692
 	
 
 ### Usage Example - Average with elements past standard deviation removed from calculation
 
+	```php
 	$nums = array(6,6,6,6,7,7,7,7,8,8,8,8,999);
 	$smoothstats = new SmoothStats($nums);
 	$average_sdf_3 = $smoothstats->GetAdjustedAverage($standardDeviationFactor=3, $roundingPrecision=2);
-	
+	```
 	Smoothed Average: 7
 
 ### SEE smoothstats.demo.php in a browser for examples and unit test results.
