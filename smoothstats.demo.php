@@ -23,7 +23,7 @@ $testSmoothStats = new TestSmoothStats();
 $nums = array(6,6,6,6,7,7,7,7,8,8,8,8,999);
 $smoothstats = new SmoothStats($nums);
 $average = $smoothstats->GetAverage();
-$average_sdf_3 = $smoothstats->GetAdjustedAverage($standardDeviationFactor=1, $roundingPrecision=2);
+$average_sdf_3 = $smoothstats->GetAdjustedAverage($standardDeviationFactor=3, $roundingPrecision=2);
 ?>
 <!DOCTYPE html>  
 <html lang="en">  
